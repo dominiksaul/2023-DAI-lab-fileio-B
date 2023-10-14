@@ -1,4 +1,4 @@
-package ch.heig.dai.lab.fileio.tomaspavoni;
+package ch.heig.dai.lab.fileio.fabricechapuis;
 
 import java.io.File;
 import java.util.HashSet;
@@ -25,11 +25,12 @@ public class FileExplorer {
      * @return a new file, or null if there is no new file
      */
     public File getNewFile() {
-        File[] filesList = folder.listFiles();
-        if(!(filesList == null)) {
-            for (File file : filesList) {
-                if (!knownFiles.contains(file)) {
-                    knownFiles.add(file);
+        File[] potential_files = this.folder.listFiles();
+
+        if (potential_files != null) {
+            for (File file : potential_files) {
+                if (!this.knownFiles.contains(file)) {
+                    this.knownFiles.add(file);
                     return file;
                 }
             }

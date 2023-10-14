@@ -1,15 +1,17 @@
-// TODO change this to your own package instead of jehrensb ***
-package ch.heig.dai.lab.fileio.Patrick2ooo;
+package ch.heig.dai.lab.fileio.fabricechapuis;
 
-import org.junit.jupiter.api.Test;
+import ch.heig.dai.lab.fileio.fabricechapuis.EncodingSelector;
 import org.junit.jupiter.api.Disabled;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
+
 import java.io.File;
 import java.nio.charset.StandardCharsets;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class EncodingSelectorTest {
 
-    private final EncodingSelector selector = new EncodingSelector();
+    private final ch.heig.dai.lab.fileio.fabricechapuis.EncodingSelector selector = new EncodingSelector();
 
     @Test
     public void encodingTest() {
