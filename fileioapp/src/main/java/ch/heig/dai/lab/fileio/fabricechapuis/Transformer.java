@@ -1,4 +1,4 @@
-package ch.heig.dai.lab.fileio.Patrick2ooo;
+package ch.heig.dai.lab.fileio.fabricechapuis;
 
 public class Transformer {
 
@@ -24,10 +24,7 @@ public class Transformer {
      */
     public String replaceChuck(String source) {
         // TODO: Implement the method body here.
-        if(source == null){
-            return source;
-        }
-        return source.replaceAll("Chuck Norris" , newName);
+        return "";
     }
 
     /**
@@ -37,13 +34,7 @@ public class Transformer {
      */
     public String capitalizeWords(String source) {
         // TODO: Implement the method body here.
-        String[] eachWord = source.split(" ");
-        StringBuffer newString = new StringBuffer();
-
-        for(String word : eachWord ){
-            newString.append(Character.toUpperCase(word.charAt(0))).append(word.substring(1)).append(" ");
-        }
-        return newString.toString().trim();
+        return "";
     }
 
     /**
@@ -54,29 +45,7 @@ public class Transformer {
      */
     public String wrapAndNumberLines(String source) {
         // TODO: Implement the method body here.
-        String[] eachWord = source.split("\\s");
-        StringBuffer newString = new StringBuffer();
-
-        int wordCounter = 0;
-        int lineCounter = 1;
-
-        for(String word : eachWord){
-            if(wordCounter == 0){
-                newString.append(lineCounter++).append(".");
-            }
-
-            newString.append(" ").append(word);
-            wordCounter++;
-
-            if(wordCounter == numWordsPerLine){
-                newString.append("\n");
-                wordCounter = 0;
-            }
-        }
-        
-
         // Use the StringBuilder class to build the result string.
-        newString.append("\n");
-        return newString.toString();
+        return "";
     }
 }   
